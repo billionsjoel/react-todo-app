@@ -1,6 +1,6 @@
 import React from 'react';
 
-function TodoList() {
+class TodosList extends React.Component {
 	return <div>TodoList</div>;
 }
 
