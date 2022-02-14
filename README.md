@@ -16,7 +16,7 @@
 
 ### Live Demo
 
-- Not yet available.
+- For a live demo, [Click here](https://billionsjoel.github.io/react-todo-app).
 
 ## Getting Started
 
