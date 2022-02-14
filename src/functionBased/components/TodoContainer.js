@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Route, Switch, Routes } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Header from './Header';
 import InputTodo from './InputTodo';
 import TodosList from './TodosList';
@@ -80,30 +80,30 @@ const TodoContainer = () => {
 	return (
 		<>
 			<Navbar />
-			<Switch>
-				<Routes>
-					<Route exact path="/">
-						<div className="container">
-							<div className="inner">
-								<Header />
-								<InputTodo addTodoProps={addTodoItem} />
-								<TodosList
-									todos={todos}
-									handleChangeProps={handleChange}
-									deleteTodoProps={delTodo}
-									setUpdate={setUpdate}
-								/>
+			<Routes>
+				<Route
+					exact
+					path="/"
+					element={
+						<>
+							<div className="container">
+								<div className="inner">
+									<Header />
+									<InputTodo addTodoProps={addTodoItem} />
+									<TodosList
+										todos={todos}
+										handleChangeProps={handleChange}
+										deleteTodoProps={delTodo}
+										setUpdate={setUpdate}
+									/>
+								</div>
 							</div>
-						</div>
-					</Route>
-					<Route path="/about">
-						<About />
-					</Route>
-					<Route path="*">
-						<NotMatch />
-					</Route>
-				</Routes>
-			</Switch>
+						</>
+					}
+				></Route>
+				<Route path="/about" element={<About />} />
+				<Route path="*" element={<NotMatch />} />
+			</Routes>
 		</>
 	);
 };
