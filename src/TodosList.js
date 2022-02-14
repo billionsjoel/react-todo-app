@@ -1,4 +1,7 @@
 function TodoList(props) {
+	const handleChange = () => {
+		console.log('clicked');
+	};
 	return (
 		<ul>
 			{props.todos.map((todo) => (
@@ -6,7 +9,7 @@ function TodoList(props) {
 					<input
 						type="checkbox"
 						checked={todo.completed}
-						onChange={() => console.log('clicked')}
+						onChange={handleChange}
 					/>
 					{todo.title}
 				</li>
