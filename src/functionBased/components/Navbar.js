@@ -4,6 +4,7 @@ import { NavLink } from 'react-router-dom';
 
 import { MdClose } from 'react-icons/md';
 import { FiMenu } from 'react-icons/fi';
+import { getValue } from '@testing-library/user-event/dist/utils';
 
 const Navbar = () => {
 	const [navbarOpen, setNavbarOpen] = useState(false);
@@ -46,7 +47,7 @@ const Navbar = () => {
 								to={link.path}
 								activeclasscame="active-link"
 								onClick={() => closeMenu()}
-								exact
+								exact={getValue.toString()}
 							>
 								{link.text}
 							</NavLink>
