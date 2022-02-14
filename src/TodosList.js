@@ -6,6 +6,7 @@ function TodoList(props) {
 					<input
 						type="checkbox"
 						checked={todo.completed}
+						onChange={() => console.log('clicked')}
 					/>
 					{todo.title}
 				</li>
