@@ -2,7 +2,7 @@
 
 # The Todo List App.
 
-> This app helps you perform math operations.
+> This app helps you perform todo list day to day operations.
 
 ![screenshot](./app-screenshot.png)
 
@@ -29,7 +29,7 @@ To get a local copy up and running follow these simple example steps.
 
 ### Setup
 
-1.  Clone the Repo or Download the Zip file or `https://github.com/billionsjoel/math-magicians`.
+1.  Clone the Repo or Download the Zip file or `https://github.com/billionsjoel/react-todo-app`.
 2.  `cd/math-magicians`
 
 ### Install
@@ -51,7 +51,7 @@ After cloning the project you need to run these commands
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/billionsjoel/math-magicians/issues).
+Feel free to check the [issues page](https://github.com/billionsjoel/react-todo-app/issues).
 
 ## Show your support
 
