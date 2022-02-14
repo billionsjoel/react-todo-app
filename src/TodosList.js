@@ -1,5 +1,11 @@
-function TodoItem(props) {
-	return <li>{props.todo.title}</li>;
+function TodoList(props) {
+	return (
+		<ul>
+			{props.todos.map((todo) => (
+				<li key={todo.id}>{todo.title}</li>
+			))}
+		</ul>
+	);
 }
 
-export default TodoItem;
+export default TodoList;
